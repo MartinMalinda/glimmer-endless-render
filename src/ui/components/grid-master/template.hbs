@@ -1,0 +1,14 @@
+<main class="ui container">
+  <div class="ui segment">
+    <div class="ui form">
+    </div>
+  </div>
+  <div class="ui segment">
+    <div class="ui divider"></div>
+    {{#each grid key="@index" as |gridRow|}}
+      {{#each gridRow key="@index" as |gridItem|}}
+        <grid-item />
+      {{/each}}
+    {{/each}}
+  </div>
+</main>
