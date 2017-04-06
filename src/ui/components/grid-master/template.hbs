@@ -6,8 +6,8 @@
   <div class="ui segment">
     <div class="ui divider"></div>
     {{#each grid key="@index" as |gridRow|}}
-      {{#each gridRow key="@index" as |gridItem|}}
-        <grid-item />
+      {{#each gridRow key="@index" as |gridItem index|}}
+        <grid-item @index={{index}} />
       {{/each}}
     {{/each}}
   </div>
